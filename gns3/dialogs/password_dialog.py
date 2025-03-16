@@ -77,7 +77,7 @@ class PasswordDialog(QtWidgets.QDialog, Ui_PasswordDialog):
             if new_password != confirm_password:
                 QtWidgets.QMessageBox.critical(self, "Error", "Passwords do not match.")
                 return
-            pattern = re.compile(r'^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8}$')
+            pattern = re.compile(r'^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$')
             if not pattern.match(new_password):
                 QtWidgets.QMessageBox.critical(self, "Error", "Password must be at least 8 characters long and contain at least one digit, one lowercase letter and one uppercase letter.")
                 return
