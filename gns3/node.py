@@ -788,6 +788,9 @@ class Node(BaseNode):
             if "console_type" in self.settings():
                 console_type = self.consoleType()
 
+        if aux is False and self.bringToFront() is True:
+            return
+
         if console_type == "telnet":
             from .telnet_console import nodeTelnetConsole
             nodeTelnetConsole(self, console_port, command)
