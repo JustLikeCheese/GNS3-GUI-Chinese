@@ -1,5 +1,5 @@
 jsonschema>=4.23,<4.24
-sentry-sdk>=2.22,<2.23  # optional dependency
+sentry-sdk>=2.26.1,<2.27  # optional dependency
 psutil>=7.0.0
 distro>=1.9.0
 truststore>=0.10.1; python_version >= '3.10'
