@@ -1,5 +1,12 @@
 # Change Log
 
+## 2.2.54 21/04/2025
+
+* Replace "Docker hub" by "Docker repository" because it is possible to use different repositories
+* Upgrade dependencies
+* Fix bring console in front when clicking on "Open all consoles". Fixes #3706
+* Add -F arg to wmctrl. Ref #3706
+
 ## 3.0.4 25/02/2025
 
 * Upgrade dependencies
