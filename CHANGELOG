@@ -1,5 +1,20 @@
 # Change Log
 
+## 3.0.5 14/05/2025
+
+* Merge remote-tracking branch 'origin/2.2' into 3.0
+* Merge remote-tracking branch 'origin/2.2' into 3.0
+* Development on 2.2.55.dev1
+* Release v2.2.54
+* Development on 2.2.54.dev1
+* Replace "Docker hub" by "Docker repository" because it is possible to use different repositories
+* Upgrade dependencies
+* Fix bring console in front when clicking on "Open all consoles". Fixes #3706
+* Upgrade dependencies
+* Allow password greater than 8 characters. Ref #3714
+* Development on 3.0.5.dev1
+* Add -F arg to wmctrl. Ref #3706
+
 ## 2.2.54 21/04/2025
 
 * Replace "Docker hub" by "Docker repository" because it is possible to use different repositories
