@@ -65,7 +65,7 @@ setup(
     cmdclass={"test": PyTest},
     author="Jeremy Grossmann",
     author_email="package-maintainer@gns3.net",
-    description="GNS3 graphical interface for the GNS3 server.",
+    description="GNS3 服务器的图形用户界面。",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
     install_requires=open("requirements.txt", "r").read().splitlines(),
