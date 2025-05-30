@@ -1,62 +1,42 @@
-GNS3-gui
+GNS3-gui 汉化版
 ========
 
-[![image](https://github.com/GNS3/gns3-gui/workflows/testing/badge.svg)](https://github.com/GNS3/gns3-gui/actions?query=workflow%3Atesting)
+GNS3 GUI 汉化版仓库。欢迎大家提交 commit。
 
-[![image](https://img.shields.io/pypi/v/gns3-gui.svg)](https://pypi.python.org/pypi/gns3-gui)
-
-[![image](https://snyk.io/test/github/GNS3/gns3-gui/badge.svg)](https://snyk.io/test/github/GNS3/gns3-gui)
-
-GNS3 GUI repository.
-
-Installation
+安装
 ------------
 
-Please see <https://docs.gns3.com/>
+请参考 <https://docs.gns3.com/>
 
-Software dependencies
+依赖的软件包
 ---------------------
 
-PyQt5 which is either part of the Linux distribution or installable from
-PyPi. The other Python dependencies are automatically installed during
-the GNS3 GUI installation and are listed
-[here](https://github.com/GNS3/gns3-gui/blob/master/requirements.txt)
+有些 Linux 发行版已经内置了 PyQt5（当然你也可以通过 PyPi 来安装）。
+其他 Python 依赖项会在 GNS3 GUI 安装过程中自动安装，并且已列出。
 
-For connecting to nodes using Telnet, a Telnet client is required. On
-Linux that's a terminal emulator like xterm, gnome-terminal, konsole
-plus the telnet program. For connecting to nodes with a GUI, a VNC
-client is required, optionally a SPICE client can be used for Qemu
-nodes.
+要通过 Telnet 连接节点，必须安装 Telnet 客户端。在 Linux 系统中，这通常包括一个终端模拟器（如 xterm、gnome-terminal 或 konsole）以及 telnet 程序。若需通过图形用户界面连接节点，则需要安装VNC客户端，或者可选择使用 SPICE 客户端以连接 Qemu 节点。
 
-For using packet captures within GNS3, Wireshark should be installed.
-It's recommended, but if you don't need that functionality you can go
-without it.
 
-Development
+在 GNS3 中使用数据包捕获功能时，建议安装Wireshark。
+
+开发
 -----------
 
-If you want to update the interface, modify the .ui files using QT
-tools. And:
+如果您想更新界面，可以使用 QT 工具修改 .ui 文件。然后执行以下操作：
 
 ``` {.bash}
 cd scripts
 python build_pyqt.py
 ```
 
-### Debug
+### 调试
 
-If you want to see the full logs in the internal shell you can type:
+如果您想在内部 shell 中查看完整的日志，可以输入：
 
 ``` {.bash}
 debug 2
 ```
 
-Or start the app with --debug flag.
+或者使用调试标志启动应用程序，即添加 --debug 参数。
 
-Due to the fact PyQT intercept you can use a web debugger for inspecting
-stuff: <https://github.com/Kozea/wdb>
-
-Security issues
----------------
-
-Please contact us at <security@gns3.net>
+由于PyQT会拦截调试，您可以使用一个网页调试器来检查内容，比如：<https://github.com/Kozea/wdb>
